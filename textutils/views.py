@@ -21,7 +21,7 @@ def analyze(request):
     #Check which checkbox is on
     if removepunc=='on' or fullcaps=="on" or newlineremover=="on" or extraspaceremover == "on" or charcounter == "on":
         if removepunc=='on':
-            punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+            punctuations = '''!()-[]{};:'"\,<>.|=/?@#$%^&*_~'''
             analyzed =""
             for char in djtext:
                 if char not in punctuations:
